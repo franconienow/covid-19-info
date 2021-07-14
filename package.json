@@ -4,14 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx functions-framework --target=sendCovidInfo --signature-type=http"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@google-cloud/bigquery": "^5.6.0",
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
     "twilio": "^3.64.0"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.9.0"
   }
 }
